@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #1e88e5; /* Blue - Trustworthy, Academic */
+  --secondary-color: #f9a825; /* Amber - Highlights, Buttons */
+  --background-color: #f4f6f8; /* Soft Gray - Reading comfort */
+  --text-color: #212121; /* Dark Gray - Clean text */
+  --accent-color: #00acc1; /* Cyan - Interactive elements */
+  --danger-color: #e53935; /* Red - Warnings */
+  --success-color: #43a047; /* Green - Success feedback */
+  --border-color: #b00909; /* Light border */
+
+  /* Optional for dark theme support */
+  --dark-bg-color: #121212;
+  --dark-text-color: #f5f5f5;
+}
+
+h1 {
+  background-color: var(--primary-color);
+}
