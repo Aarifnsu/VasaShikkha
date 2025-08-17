@@ -78,6 +78,10 @@ ul li a{
     font-weight: bold;
     font-size: 25px;
 }
+#burger, #cancel{
+    display: none;
+}
+
 header button{
     border: none;
     outline: none;
@@ -101,5 +105,89 @@ header button{
 .call-btn{
     margin-right: 70px;
 }
+@media only screen and (max-width: 600px) {
+    body{
+        background: #1F3A44;
+    }
+    header{
+        height: 70px;
+        background-color: #00acc1;
+    }
+    img{
+        height: 50px;
+        float: right;
+        margin-left: 10px;
+        padding: 5px;
+    }
+    .search input{
+        width: 70px;
+        padding: 8px 8px;
+        font-size: 15px;
+    }
+    .search i{
+    top: 50%;
+    right: 10px;
+
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #00acc1;
+        top: 71px;
+        text-align: center;
+        left: 100%;
+        transition: all .5s;
+    }
+    ul li{
+        display: block;
+        padding: 10px;
+        margin-top: 20px;
+        /* border: solid; */
+        border-bottom:1px solid #1F3A44;
+    }
+    ul li a{
+        text-transform: uppercase;
+    }
+    #clickBurger:checked ~ ul{
+        left: 0%;
+    }
+    #clickBurger:checked ~ label #burger{
+        display: none;
+    }
+     #clickBurger:checked ~ label #cancel{
+        display: block;
+    }
+    #burger{
+        display: block;
+        font-size: 30px;
+        margin-right: 15px;
+    }
+    #cancel{
+        font-size: 35px;
+        margin-right: 15px;
+    }
+    
+    header button{
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+        width: 60px;
+
+    
+    }
+    .call-btn a{
+        font-size: 12PX;
+        font-weight: bold;
+}
+    .call-btn i{
+        font-size: 12PX;
+        font-weight: bold;
+}
+.call-btn{
+    margin-right: 0px;
+}
 
 
+
+}
