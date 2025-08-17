@@ -29,6 +29,7 @@ header{
     background: var(--background-color);
     align-items: center;
 }
+
 img{
    height: 70px;
    width: auto;
@@ -78,9 +79,7 @@ ul li a{
     font-weight: bold;
     font-size: 25px;
 }
-#burger, #cancel{
-    display: none;
-}
+
 
 header button{
     border: none;
@@ -105,7 +104,12 @@ header button{
 .call-btn{
     margin-right: 70px;
 }
-@media only screen and (max-width: 600px) {
+#burger, 
+#cancel{
+    float: right;
+    display: none;
+}
+@media only screen and (max-width: 860px) {
     body{
         background: #1F3A44;
     }
@@ -115,7 +119,6 @@ header button{
     }
     img{
         height: 50px;
-        float: right;
         margin-left: 10px;
         padding: 5px;
     }
@@ -139,7 +142,7 @@ header button{
         left: 100%;
         transition: all .5s;
     }
-    ul li{
+    header ul li{
         display: block;
         padding: 10px;
         margin-top: 20px;
@@ -166,6 +169,7 @@ header button{
     #cancel{
         font-size: 35px;
         margin-right: 15px;
+        
     }
     
     header button{
